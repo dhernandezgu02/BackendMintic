@@ -8,9 +8,9 @@ const configurations = {
   // MONGODB_URI: `mongodb://${process.env.MONGODB_HOST || "localhost"}/${
   //   process.env.MONGODB_DATABASE || "products-app"
   // }`,
-  MONGODB_HOST: "192.168.0.4",
+  MONGODB_HOST: "cluster0.qi5g7.mongodb.net",
   MONGODB_DATABASE: "products-app",
-  MONGODB_URI: `mongodb://${"192.168.0.4"}/${"products-app"}`,
+  MONGODB_URI: `mongodb+srv://daniel:daniel1234@cluster0.qi5g7.mongodb.net/products-app?retryWrites=true&w=majority`,
 };
 
 module.exports = configurations;

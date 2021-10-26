@@ -1,5 +1,6 @@
 const app = require("./app");
 require("./database");
+console.log(app.get("env"));
 
 // Server is listening
 app.listen(app.get("port"));

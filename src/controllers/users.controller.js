@@ -3,6 +3,18 @@ const User = require("../models/User");
 
 // exports.renderSignUpForm = (req, res) => res.render("users/signup");
 
+exports.getUsers = async (req, res) => {
+  //     const notes = await Note.find({ user: req.user.id })
+  //     .sort({ date: "desc" })
+  //     .lean();
+  //   res.render("notes/all-notes", { notes });
+  const users = await User.find();
+  res.status(200).json({
+    users: users,
+    status: 200,
+  });
+};
+
 exports.singup = async (req, res) => {
   try {
     let errors = [];

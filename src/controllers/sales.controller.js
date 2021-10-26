@@ -8,6 +8,7 @@ exports.getSales = async (req, res) => {
   const sales = await Sale.find();
   res.status(200).json({
     sales: sales,
+    status: 200,
   });
 };
 
